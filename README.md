@@ -12,7 +12,7 @@
 - Diving Deeper: Spring Core & Spring Boot
 - Spring MVC High-key properties
 - Mybatis and DAO
-- DB transactions and DATABASE&RAlATION designing
+- DB transactions and DATABASE&RALATION designing
 - Web system cache
 - WebFlux
 - Distributed Micro-Services
