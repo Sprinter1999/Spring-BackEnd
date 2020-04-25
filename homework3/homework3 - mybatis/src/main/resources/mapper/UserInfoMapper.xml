@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.demo.mapper.UserInfoMapper">
+
+    <select id="findAll" resultType="com.demo.entity.UserInfo">
+        select * from user_info
+    </select>
+
+    <!--keyProperty的值为实体类的属性名 - 即往往为驼峰法，而非数据库中的属性名-->
+    <insert id="create" useGeneratedKeys="true" keyProperty="userId">
+        insert into user_info(account,password) values (#{account} ,#{password})
+    </insert>
+
+    <!--#{}中为参数名，而非属性名之类，注意不要写错-->
+    <select id="findById" resultType="com.demo.entity.UserInfo">
+        select * from user_info where user_id = #{id}
+    </select>
+
+    <delete id="deleteById">
+        delete from user_info where user_id = #{id}
+    </delete>
+
+    <!--UserInfoWithFollows-->
+    <resultMap id="UserInfoWithFollows" type="com.demo.dto.UserInfoWithFollow">
+        <id column="user_id" property="user_id"/>
+        <result column="account" property="account"/>
+        <result column="password" property="password"/>
+
+        <collection property="followList" column="id" ofType="com.demo.entity.Follow">
+            <id column="f_id" property="id"/>
+            <result column="followee_id" property="followee_id"/>
+            <result column="f_account" property="account"/>
+        </collection>
+    </resultMap>
+
+    <select id="findAllWithFollows" resultMap="UserInfoWithFollows">
+        select u.user_id,u.account,f.id as f_id,f.account as f_account,f.follower_id,f.followee_id
+            from user_info u
+            left join follow f on u.user_id = f.follower_id
+    </select>
+
+    <!--UserInfoWithTimelyNews-->
+    <resultMap id="UserInfoWithTimelyNews" type="com.demo.dto.UserInfoWithTimelyNews">
+        <id column="user_id" property="user_id"/>
+        <result column="account" property="account"/>
+        <result column="password" property="password"/>
+
+        <collection property="timelyNewsList" column="id" ofType="com.demo.entity.TimelyNews">
+            <id column="t_id" property="id"/>
+            <result column="time" property="time"/>
+            <result column="news" property="news"/>
+        </collection>
+    </resultMap>
+
+    <select id="findAllWithTimelyNews" resultMap="UserInfoWithTimelyNews">
+        select u.user_id,u.account,t.id as t_id,t.time,t.news
+            from user_info u
+            left join timely_news t on u.user_id = t.user_id
+    </select>
+</mapper>

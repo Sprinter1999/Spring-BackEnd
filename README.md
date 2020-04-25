@@ -3,15 +3,18 @@
 ### Section：大三下
 
 ## Code Notes:
+- homework1: 
 - ch2_1: Restful Api Designing&Swagger-ui, using local H2-database
-- to be continued
+- homework2: Improved version of ch2_1, adding cascade, FK,etc.
+- ch5_3 and Homework3: Mybatis&Mybatis Plus reconstructing homework2
+- Learning Summary: some notes
 
 ## Learning Content:
-- Overall Introduction
-- Web Api Designing
-- Diving Deeper: Spring Core & Spring Boot
-- Spring MVC High-key properties
-- Mybatis and DAO
+- Overall Introduction ✔
+- Web Api Designing ✔
+- Diving Deeper: Spring Core & Spring Boot ✔
+- Spring MVC High-key properties ✔
+- Mybatis and DAO ✔
 - DB transactions and DATABASE&RALATION designing
 - Web system cache
 - WebFlux
@@ -22,3 +25,7 @@
 - Service Registry & Load Balance
 - Fuse & Service Gateway
 - Container & Automatical Deployment Tool
+
+## Appreciation：
+- Some improved ideas are contributed by my friend ZC,Lee
+- Many thanks to BUPT 王尊亮老师 who teach us during this year

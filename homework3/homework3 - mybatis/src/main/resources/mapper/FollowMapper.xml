@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.demo.mapper.FollowMapper">
+
+    <select id="findAll" resultType="com.demo.entity.Follow">
+        select * from follow
+    </select>
+
+    <insert id="create" useGeneratedKeys="true" keyProperty="id">
+        insert into follow(account,follower_id,followee_id) values (#{account} ,#{follower_id},#{followee_id})
+    </insert>
+
+    <select id="findById" resultType="com.demo.entity.Follow">
+        select * from follow where id = #{id}
+    </select>
+
+    <delete id="deleteById">
+        delete from follow where id = #{id}
+    </delete>
+</mapper>

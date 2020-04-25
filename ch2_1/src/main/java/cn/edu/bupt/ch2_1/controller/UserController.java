@@ -30,7 +30,7 @@ public class UserController {
     FriendRepository friendRepository;
     @Autowired
     BlogRepository blogRepository;
-
+    
     @ApiOperation(value = "获取用户列表", notes = "返回值为全部的userlist，为空时状态码为204")
     @GetMapping(path = "/", produces = "application/json")
     public Result<?> listAll() {
@@ -142,6 +142,8 @@ public class UserController {
         }
     }
 
+
+    
     @ApiOperation(value="Get all friends blogs",notes="获取所有好友的动态列表")
     @GetMapping(path="/{uid}/friends/blogs", produces = "application/json")
     public Result<?> getFriendsBlogs(@PathVariable Long uid)
