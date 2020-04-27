@@ -14,8 +14,8 @@
 - Web Api Designing ✔
 - Diving Deeper: Spring Core & Spring Boot ✔
 - Spring MVC High-key properties ✔
-- Mybatis and DAO ✔
-- DB transactions and DATABASE&RALATION designing
+- DAO: Mybatis and MybatisPlus ✔
+- DB transactions and DATABASE&RALATION designing 分片分表✔
 - Web system cache
 - WebFlux
 - Distributed Micro-Services
