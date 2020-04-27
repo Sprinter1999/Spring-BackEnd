@@ -28,4 +28,4 @@
 
 ## Appreciation：
 - Some improved ideas are contributed by my friend ZC,Lee
-- Many thanks to BUPT 王尊亮老师 who teach us during this year
+- Many thanks to BUPT ZL,Wang 老师 who teach us during this year
