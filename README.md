@@ -15,11 +15,11 @@
 - Diving Deeper: Spring Core & Spring Boot ✔
 - Spring MVC High-key properties ✔
 - Mybatis and DAO ✔
-- DB transactions and DATABASE&RALATION designing
-- Web system cache
-- WebFlux
-- Distributed Micro-Services
-- Message Middleware
+- DB transactions and DATABASE&RALATION designing √
+- Web system cache ✔
+- WebFlux ✔
+- Distributed Micro-Services ✔
+- Message Middleware ✔
 - System Integration and Batch processing
 - Spring Cloud
 - Service Registry & Load Balance
