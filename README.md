@@ -14,12 +14,21 @@
 - Web Api Designing ✔
 - Diving Deeper: Spring Core & Spring Boot ✔
 - Spring MVC High-key properties ✔
+<<<<<<< HEAD
 - Mybatis and DAO ✔
 - DB transactions and DATABASE&RALATION designing √
 - Web system cache ✔
 - WebFlux ✔
 - Distributed Micro-Services ✔
 - Message Middleware ✔
+=======
+- DAO: Mybatis and MybatisPlus ✔
+- DB transactions and DATABASE&RALATION designing 分片分表✔
+- Web system cache
+- WebFlux
+- Distributed Micro-Services
+- Message Middleware
+>>>>>>> 20fe2bec64c3534bba16919c748cd46fde0eafbb
 - System Integration and Batch processing
 - Spring Cloud
 - Service Registry & Load Balance
@@ -28,4 +37,4 @@
 
 ## Appreciation：
 - Some improved ideas are contributed by my friend ZC,Lee
-- Many thanks to BUPT 王尊亮老师 who teach us during this year
+- Many thanks to BUPT ZL,Wang 老师 who teach us during this year
